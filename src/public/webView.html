@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyB-4xniLhpTombkwrvDMx9cOL2Q_AzKWQE"></script>
+           <!--script type="text/javascript" src=" https://maps.googleapis.com/maps/api/js?callback=getLocation&libraries=places"></script-->
+       
+    </head>
+<body>
+
+
+<p id="demo"></p>
+
+<script>
+
+
+
+var x = document.getElementById("demo");
+var position = {};
+var map;
+var service;
+var infowindow;
+getLocation();
+ 
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+    }
+}
+
+function showPosition(position) {
+    //console.log();
+       this.position.lat = position.coords.latitude; 
+       this.position.long =position.coords.longitude;
+      
+     x.innerHTML = "MYLOCATION"+'</br>'+"Latitude: " + position.coords.latitude + 
+    "<br>Longitude: " + position.coords.longitude+'<hr>';
+    
+    initialize();
+      
+}
+
+
+function initialize() {
+    console.log('initialize');
+  var pyrmont = new google.maps.LatLng( this.position.lat, this.position.long);
+
+  map = new google.maps.Map({
+      center: pyrmont,
+      zoom: 15
+    });
+
+  var request = {
+    location: pyrmont,
+    radius: '500',
+    type: ['restaurant']
+  };
+    console.log('google.maps.places.PlacesService');
+  service = new google.maps.places.PlacesService(map);
+  service.nearbySearch(request, callback);
+   console.log('nearbySearch');
+}
+
+function callback(results, status) {
+    console.log("callback");
+  if (status == google.maps.places.PlacesServiceStatus.OK) {
+       console.log(" google.maps.places.PlacesServiceStatus");
+    for (var i = 0; i < results.length; i++) {
+        console.log(" for");
+      var place = results[i];
+       x.innerHTML =  x.innerHTML+'</br>'+place.name ;
+       console.log(place);
+      //createMarker(results[i]);
+    }
+  }
+}
+</script>
+
+</body>
+</html>
