@@ -133,15 +133,14 @@ var Express = function () {
                   this.express.listen(_constants.ENV.APP_PORT, function () {
                                
                       return console.info('server started on port ' + _constants.ENV.APP_PORT + ' (' + _constants.ENV.ENV + ')');
-                  });}}*/
+                  });*/
                   var port = process.env.PORT;
                   this.express.listen(port||3000, function () {
                                
                       return console.info('server started on port ' + _constants.ENV.APP_PORT || 3000 || process.env.PORT + ' (' + _constants.ENV.ENV + ')');
-
+                    });
                 }
-            
-    , {
+    }, {
         key: 'cancle',
         value: function cancle() {}
     }]);
