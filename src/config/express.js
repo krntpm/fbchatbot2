@@ -144,7 +144,6 @@ var Express = function () {
         key: 'cancle',
         value: function cancle() {}
     }]);
-
     return Express;
 }();
 
