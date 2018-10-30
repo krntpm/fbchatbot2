@@ -117,7 +117,7 @@ var process = exports.process = function (_Intent) {
                         case 'transfer':
                               console.info("in transfer intent");
                               text = "transfer";  
-                              this.rich["PassThreadControl"] = Rich["PassThreadControl"](this.data.sender_psid,431559724041095);
+                              this.rich["PassThreadControl"] = Rich["PassThreadControl"](this.data.sender_psid,1937098886374291);
                               
                               let serviceResponse =  new _services.responseMessenger(this.app);
                               await serviceResponse.callSendAPI('/pass_thread_control', this.rich.PassThreadControl, () => {});

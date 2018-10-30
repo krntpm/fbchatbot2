@@ -35,8 +35,8 @@
             "PAGE_ACCESS_TOKEN":"EAAGIgFQNA4cBAExbmUnnQiGxFSj0ZBVyzN0vlvcejGPsOtCDcKZBvK2BzcLx18ytuKWUitThzbr3NkOGNnTz0VtcVnKkijUMo4CGYgdAsRl7Gcih3A0VRhYPavzz0GF54LlMMu17uLW7hKfNy206AskaTZAcd6Vbp112LwOKAZDZD",
             "SERVER_URL" : "https://fbaichatbot-am.herokuapp.com/",
             "APP_SECRET" : "725b6c534d437dac4c7b5f0a314eeb2b",
-            "APP_ID_1" : "1937098886374291",
-            "APP_ID_2" : "431559724041095",
+            "APP_ID_1" : "431559724041095",
+            "APP_ID_2" : "1937098886374291",
             "TOKEN" : "koranit"
 
         }
