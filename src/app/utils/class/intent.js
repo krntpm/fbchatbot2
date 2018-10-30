@@ -181,7 +181,7 @@ var Intent = exports.Intent = function () {
                         let sender_psid = webhook_event.sender.id;
                         console.log(`Sender PSID: ${sender_psid}`);
 
-                        if (webhook_event.message.text) { 
+                        if (undefined !==webhook_event.message.text) { 
                             this._(sender_psid,webhook_event.message.text);
 
      ///////////////////////////////in case clients send the location/////////////////////////////                       
