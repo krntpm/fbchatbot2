@@ -32,7 +32,7 @@
             "JWT_SECRET": "bA2xcjpf8y5aSUFsNB2qN5yymUBSs6es3qHoFpGkec75RCeBb8cpKauGefw5qy4",
             "JWT_EXPIRATION_MINUTES": 15,
             "JWT_DATA_STORAGE": "bjNsbGlrQGVOQzBkM0RhVEBzdDBSQGdl",
-            "PAGE_ACCESS_TOKEN":"EAADY4DfHXUIBAPCnEYtZC78gww4spJVmL94bMnOq6JFgXzRQPnULeadDRV9jm7KG5ozJCPR1NmuLt9DIxt55CIqkfUZBuLyyEfeXVfVWV0BlkHYkBnFrQONIkP2ldKET0ey3eZBJctm5ZAxqHTY7YQT5B3ZCuXVTiIWqgkkRaawZDZD",
+            "PAGE_ACCESS_TOKEN":"EAAGIgFQNA4cBAByXW3gKTULPlewDFXCPaZC8ZAeZA4HrrLYg7VORo45C9I4XiwYJ11nppicncFYbQvvT5B2ZBvOWDdfchtNDqHTyKGB22AtSwYTYoxZCn2g0i8tszAjnh5xmw2eQLkHLhtOq5iIDobDyRd8XGnFuPzvOynmHO8AZDZD",
             "SERVER_URL" : "https://fbaichatbot-am.herokuapp.com/",
             "APP_SECRET" : "725b6c534d437dac4c7b5f0a314eeb2b",
             "APP_ID_1" : "431559724041095",
