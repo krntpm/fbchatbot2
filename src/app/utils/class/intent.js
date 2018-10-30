@@ -153,7 +153,7 @@ var Intent = exports.Intent = function () {
                 // Gets the body of the webhook event
                             console.log(webhook_events);
                             let webhook_event = message;
-                            //console.log(webhook_event);
+                            console.log(webhook_event);
                             console.log('Message: '+webhook_event.text);
                             // Get the sender PSID
                             let sender_psid = psid;
@@ -181,11 +181,11 @@ var Intent = exports.Intent = function () {
                         let sender_psid = webhook_event.sender.id;
                         console.log(`Sender PSID: ${sender_psid}`);
 
-                        if (webhook_event.message) { 
-                            this._(sender_psid,webhook_event.message);
+                        if (webhook_event.message.text) { 
+                            this._(sender_psid,webhook_event.message.text);
 
      ///////////////////////////////in case clients send the location/////////////////////////////                       
-                        }/*else if(webhook_event.message.attachments){
+                        }else if(webhook_event.message.attachments){
                                 var messageAttachments = webhook_event.message.attachments
                                 var lat = null;
                                 var long = null;
@@ -207,7 +207,7 @@ var Intent = exports.Intent = function () {
 
 
 
-                        }*/ else if (webhook_event.postback) {
+                        }else if (webhook_event.postback) {
                             handlePostback(sender_psid, webhook_event.postback);
                         }
 
