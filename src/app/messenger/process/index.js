@@ -62,7 +62,7 @@ var process = exports.process = function (_Intent) {
         key: 'res',
         value:async function res() {
             console.log('res start');
-            var intent = this.data.received_message;
+            var intent = this.data.received_message.text;
             let response = await new _services.handleMessage(intent).request();
             let responseData = response.data;
             let responseStatusCode = responseData['statusCode'];
