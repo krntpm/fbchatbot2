@@ -210,6 +210,9 @@ var Intent = exports.Intent = function () {
                         }else if (webhook_event.postback) {
                             handlePostback(sender_psid, webhook_event.postback);
                         }
+                        else{
+                            console.log("else"+body);
+                        }
 
 
                     });
