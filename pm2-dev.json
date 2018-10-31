@@ -22,7 +22,7 @@
             "SAVE_LOG": true,
             "LOG_PATH": "D:/app/GL-ASSIST/logs/",
             "LOG_ROTATE_TIME": 60,
-            "BASE_API_MYAIS": "https://10.239.223.104:8080/social-adapter-fe",
+            "BASE_API_MYAIS": "http://10.239.223.104:8080/social-adapter-fe",
             "BASE_API_AISPLAY": "https://aog.ais-vidnt.com/assist/playbot",
             "BASE_IMG_URL": "http://110.49.202.141/CPC-FE-SERVICE/cpc-api/v1/download/AI_Content",
             "BASE_URL_LINKING": "http://iot-srf.ais.co.th:8080",
