@@ -15,6 +15,17 @@ Object.keys(_checkBalance).forEach(function (key) {
     }
   });
 });
+var _transferToSMM = require('./transferToSMM');
+
+Object.keys(_transferToSMM).forEach(function (key) {
+  if (key === "default" || key === "__esModule") return;
+  Object.defineProperty(exports, key, {
+    enumerable: true,
+    get: function get() {
+      return _transferToSMM[key];
+    }
+  });
+});
 
 var _checkMainPromotion = require('./checkMainPromotion');
 

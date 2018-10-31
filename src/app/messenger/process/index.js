@@ -121,6 +121,10 @@ var process = exports.process = function (_Intent) {
                               
                               let serviceResponse =  new _services.responseMessenger(this.app);
                               await serviceResponse.callSendAPI('/pass_thread_control', this.rich.PassThreadControl, () => {});
+                              
+                              
+                              let serviceSMM = new _services._transferToSMM(intent);
+                              await serviceResponse.callAPIEngine(this.data.sender_psid);
                               //passThreadControl(sender_psid,_constants.ENV.APP_ID_2);
                             break;    
                         default:
